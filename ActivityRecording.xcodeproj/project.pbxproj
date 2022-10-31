@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4076077E1E8183AF00A6A8EA /* SessionCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4076077C1E8183AF00A6A8EA /* SessionCommands.swift */; };
+		407607861E81A7F000A6A8EA /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407607851E81A7F000A6A8EA /* DataProvider.swift */; };
+		407607871E81A7F000A6A8EA /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407607851E81A7F000A6A8EA /* DataProvider.swift */; };
+		4084B0231EA057EF00ACA046 /* SessionCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4076077C1E8183AF00A6A8EA /* SessionCommands.swift */; };
+		40AF22991F29236300E6D1A8 /* SessionDelegator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AF22981F29236300E6D1A8 /* SessionDelegator.swift */; };
+		40AF229A1F29236300E6D1A8 /* SessionDelegator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AF22981F29236300E6D1A8 /* SessionDelegator.swift */; };
+		40C02A9A20A27F28006F07AE /* CommandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C02A9920A27F28006F07AE /* CommandsViewController.swift */; };
+		40D46F4F1E8065200077A7B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D46F4E1E8065200077A7B7 /* AppDelegate.swift */; };
+		40D46F511E8065200077A7B7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D46F501E8065200077A7B7 /* MainViewController.swift */; };
+		40D46F541E8065200077A7B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40D46F521E8065200077A7B7 /* Main.storyboard */; };
+		40D46F561E8065200077A7B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40D46F551E8065200077A7B7 /* Assets.xcassets */; };
+		40D46F591E8065200077A7B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40D46F571E8065200077A7B7 /* LaunchScreen.storyboard */; };
+		40D46F5E1E8065200077A7B7 /* ActivityRecording WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 40D46F5D1E8065200077A7B7 /* ActivityRecording WatchKit App.app */; };
+		40D46F641E8065200077A7B7 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40D46F621E8065200077A7B7 /* Interface.storyboard */; };
+		40D46F661E8065200077A7B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40D46F651E8065200077A7B7 /* Assets.xcassets */; };
+		40D46F6D1E8065200077A7B7 /* ActivityRecording WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 40D46F6C1E8065200077A7B7 /* ActivityRecording WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		40D46F721E8065200077A7B7 /* MainInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D46F711E8065200077A7B7 /* MainInterfaceController.swift */; };
+		40D46F741E8065200077A7B7 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D46F731E8065200077A7B7 /* ExtensionDelegate.swift */; };
+		40D46F761E8065200077A7B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40D46F751E8065200077A7B7 /* Assets.xcassets */; };
+		40D8B77920A554A5005F7D76 /* CommandStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D8B77820A554A5005F7D76 /* CommandStatus.swift */; };
+		40D8B77A20A554A5005F7D76 /* CommandStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D8B77820A554A5005F7D76 /* CommandStatus.swift */; };
+		40DC7D0F1EA8186200A93AFB /* CustomLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DC7D0E1EA8186200A93AFB /* CustomLogger.swift */; };
+		40DC7D101EA8186200A93AFB /* CustomLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DC7D0E1EA8186200A93AFB /* CustomLogger.swift */; };
+		832A026D290FD3B8004B3EA2 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A026C290FD3B8004B3EA2 /* WorkoutManager.swift */; };
+		832A026F291113A6004B3EA2 /* SummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A026E291113A6004B3EA2 /* SummaryController.swift */; };
+		832A02712917C8AF004B3EA2 /* CoreMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A02702917C8AF004B3EA2 /* CoreMotionManager.swift */; };
+		83BDC054291AACAD0016A7EE /* DatafileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BDC053291AACAD0016A7EE /* DatafileManager.swift */; };
+		83BDC056291F9FEE0016A7EE /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BDC055291F9FEE0016A7EE /* ProgressController.swift */; };
+		83BDC058291FB7A80016A7EE /* ActivitySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BDC057291FB7A80016A7EE /* ActivitySelectionView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40D46F5F1E8065200077A7B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40D46F431E8065200077A7B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40D46F5C1E8065200077A7B7;
+			remoteInfo = "SimpleWatchConnectivity WatchKit App";
+		};
+		40D46F6E1E8065200077A7B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40D46F431E8065200077A7B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40D46F6B1E8065200077A7B7;
+			remoteInfo = "SimpleWatchConnectivity WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		40D46F7D1E8065200077A7B7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				40D46F6D1E8065200077A7B7 /* ActivityRecording WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40D46F811E8065200077A7B7 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				40D46F5E1E8065200077A7B7 /* ActivityRecording WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4076077C1E8183AF00A6A8EA /* SessionCommands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SessionCommands.swift; path = Shared/SessionCommands.swift; sourceTree = "<group>"; };
+		407607851E81A7F000A6A8EA /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataProvider.swift; path = Shared/DataProvider.swift; sourceTree = "<group>"; };
+		40AF22981F29236300E6D1A8 /* SessionDelegator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SessionDelegator.swift; path = Shared/SessionDelegator.swift; sourceTree = "<group>"; };
+		40C02A9920A27F28006F07AE /* CommandsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsViewController.swift; sourceTree = "<group>"; };
+		40D46F4B1E8065200077A7B7 /* ActivityRecording.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivityRecording.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40D46F4E1E8065200077A7B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		40D46F501E8065200077A7B7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		40D46F531E8065200077A7B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40D46F551E8065200077A7B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40D46F581E8065200077A7B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40D46F5A1E8065200077A7B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40D46F5D1E8065200077A7B7 /* ActivityRecording WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ActivityRecording WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40D46F631E8065200077A7B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		40D46F651E8065200077A7B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40D46F671E8065200077A7B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40D46F6C1E8065200077A7B7 /* ActivityRecording WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ActivityRecording WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40D46F711E8065200077A7B7 /* MainInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInterfaceController.swift; sourceTree = "<group>"; };
+		40D46F731E8065200077A7B7 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		40D46F751E8065200077A7B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40D46F771E8065200077A7B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40D8B77820A554A5005F7D76 /* CommandStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommandStatus.swift; path = Shared/CommandStatus.swift; sourceTree = "<group>"; };
+		40DC7D0E1EA8186200A93AFB /* CustomLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomLogger.swift; path = Shared/CustomLogger.swift; sourceTree = "<group>"; };
+		40E1690B27A20D30003BDD50 /* ActivityRecording.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ActivityRecording.entitlements; sourceTree = "<group>"; };
+		40E1690C27A20D3F003BDD50 /* ActivityRecording WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ActivityRecording WatchKit App.entitlements"; sourceTree = "<group>"; };
+		40E1690D27A20D48003BDD50 /* ActivityRecording WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ActivityRecording WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		553200CB0B03C77CB7FCA0AC /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		832A026C290FD3B8004B3EA2 /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		832A026E291113A6004B3EA2 /* SummaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryController.swift; sourceTree = "<group>"; };
+		832A02702917C8AF004B3EA2 /* CoreMotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionManager.swift; sourceTree = "<group>"; };
+		83BDC053291AACAD0016A7EE /* DatafileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatafileManager.swift; sourceTree = "<group>"; };
+		83BDC055291F9FEE0016A7EE /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
+		83BDC057291FB7A80016A7EE /* ActivitySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySelectionView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40D46F481E8065200077A7B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40D46F691E8065200077A7B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4076077B1E81834B00A6A8EA /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				407607851E81A7F000A6A8EA /* DataProvider.swift */,
+				40D8B77820A554A5005F7D76 /* CommandStatus.swift */,
+				4076077C1E8183AF00A6A8EA /* SessionCommands.swift */,
+				40AF22981F29236300E6D1A8 /* SessionDelegator.swift */,
+				40DC7D0E1EA8186200A93AFB /* CustomLogger.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		40D46F421E8065200077A7B7 = {
+			isa = PBXGroup;
+			children = (
+				4076077B1E81834B00A6A8EA /* Shared */,
+				40D46F4D1E8065200077A7B7 /* ActivityRecording */,
+				40D46F611E8065200077A7B7 /* ActivityRecording WatchKit App */,
+				40D46F701E8065200077A7B7 /* ActivityRecording WatchKit Extension */,
+				40D46F4C1E8065200077A7B7 /* Products */,
+				B6CCE5FF3493355C169F8933 /* Configuration */,
+			);
+			sourceTree = "<group>";
+		};
+		40D46F4C1E8065200077A7B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40D46F4B1E8065200077A7B7 /* ActivityRecording.app */,
+				40D46F5D1E8065200077A7B7 /* ActivityRecording WatchKit App.app */,
+				40D46F6C1E8065200077A7B7 /* ActivityRecording WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40D46F4D1E8065200077A7B7 /* ActivityRecording */ = {
+			isa = PBXGroup;
+			children = (
+				40E1690B27A20D30003BDD50 /* ActivityRecording.entitlements */,
+				40D46F4E1E8065200077A7B7 /* AppDelegate.swift */,
+				40D46F501E8065200077A7B7 /* MainViewController.swift */,
+				40C02A9920A27F28006F07AE /* CommandsViewController.swift */,
+				40D46F521E8065200077A7B7 /* Main.storyboard */,
+				40D46F551E8065200077A7B7 /* Assets.xcassets */,
+				40D46F571E8065200077A7B7 /* LaunchScreen.storyboard */,
+				40D46F5A1E8065200077A7B7 /* Info.plist */,
+			);
+			path = ActivityRecording;
+			sourceTree = "<group>";
+		};
+		40D46F611E8065200077A7B7 /* ActivityRecording WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				40E1690C27A20D3F003BDD50 /* ActivityRecording WatchKit App.entitlements */,
+				40D46F621E8065200077A7B7 /* Interface.storyboard */,
+				40D46F651E8065200077A7B7 /* Assets.xcassets */,
+				40D46F671E8065200077A7B7 /* Info.plist */,
+			);
+			path = "ActivityRecording WatchKit App";
+			sourceTree = "<group>";
+		};
+		40D46F701E8065200077A7B7 /* ActivityRecording WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				40E1690D27A20D48003BDD50 /* ActivityRecording WatchKit Extension.entitlements */,
+				40D46F731E8065200077A7B7 /* ExtensionDelegate.swift */,
+				40D46F711E8065200077A7B7 /* MainInterfaceController.swift */,
+				83BDC057291FB7A80016A7EE /* ActivitySelectionView.swift */,
+				83BDC055291F9FEE0016A7EE /* ProgressController.swift */,
+				832A026E291113A6004B3EA2 /* SummaryController.swift */,
+				832A026C290FD3B8004B3EA2 /* WorkoutManager.swift */,
+				832A02702917C8AF004B3EA2 /* CoreMotionManager.swift */,
+				83BDC053291AACAD0016A7EE /* DatafileManager.swift */,
+				40D46F751E8065200077A7B7 /* Assets.xcassets */,
+				40D46F771E8065200077A7B7 /* Info.plist */,
+			);
+			path = "ActivityRecording WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B6CCE5FF3493355C169F8933 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				553200CB0B03C77CB7FCA0AC /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40D46F4A1E8065200077A7B7 /* ActivityRecording */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40D46F821E8065200077A7B7 /* Build configuration list for PBXNativeTarget "ActivityRecording" */;
+			buildPhases = (
+				40D46F471E8065200077A7B7 /* Sources */,
+				40D46F481E8065200077A7B7 /* Frameworks */,
+				40D46F491E8065200077A7B7 /* Resources */,
+				40D46F811E8065200077A7B7 /* Embed Watch Content */,
+				40F176CA1EAE798400D9AC9F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40D46F601E8065200077A7B7 /* PBXTargetDependency */,
+			);
+			name = ActivityRecording;
+			productName = SimpleWatchConnectivity;
+			productReference = 40D46F4B1E8065200077A7B7 /* ActivityRecording.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40D46F5C1E8065200077A7B7 /* ActivityRecording WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40D46F7E1E8065200077A7B7 /* Build configuration list for PBXNativeTarget "ActivityRecording WatchKit App" */;
+			buildPhases = (
+				40D46F5B1E8065200077A7B7 /* Resources */,
+				40D46F7D1E8065200077A7B7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40D46F6F1E8065200077A7B7 /* PBXTargetDependency */,
+			);
+			name = "ActivityRecording WatchKit App";
+			productName = "SimpleWatchConnectivity WatchKit App";
+			productReference = 40D46F5D1E8065200077A7B7 /* ActivityRecording WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		40D46F6B1E8065200077A7B7 /* ActivityRecording WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40D46F7A1E8065200077A7B7 /* Build configuration list for PBXNativeTarget "ActivityRecording WatchKit Extension" */;
+			buildPhases = (
+				40D46F681E8065200077A7B7 /* Sources */,
+				40D46F691E8065200077A7B7 /* Frameworks */,
+				40D46F6A1E8065200077A7B7 /* Resources */,
+				40F176CB1EAE79BF00D9AC9F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ActivityRecording WatchKit Extension";
+			productName = "SimpleWatchConnectivity WatchKit Extension";
+			productReference = 40D46F6C1E8065200077A7B7 /* ActivityRecording WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40D46F431E8065200077A7B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 1320;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					40D46F4A1E8065200077A7B7 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = L38W95582F;
+						LastSwiftMigration = 1100;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					40D46F5C1E8065200077A7B7 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = L38W95582F;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					40D46F6B1E8065200077A7B7 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = L38W95582F;
+						LastSwiftMigration = 1100;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 40D46F461E8065200077A7B7 /* Build configuration list for PBXProject "ActivityRecording" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40D46F421E8065200077A7B7;
+			productRefGroup = 40D46F4C1E8065200077A7B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40D46F4A1E8065200077A7B7 /* ActivityRecording */,
+				40D46F5C1E8065200077A7B7 /* ActivityRecording WatchKit App */,
+				40D46F6B1E8065200077A7B7 /* ActivityRecording WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40D46F491E8065200077A7B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40D46F591E8065200077A7B7 /* LaunchScreen.storyboard in Resources */,
+				40D46F561E8065200077A7B7 /* Assets.xcassets in Resources */,
+				40D46F541E8065200077A7B7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40D46F5B1E8065200077A7B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40D46F661E8065200077A7B7 /* Assets.xcassets in Resources */,
+				40D46F641E8065200077A7B7 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40D46F6A1E8065200077A7B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40D46F761E8065200077A7B7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40F176CA1EAE798400D9AC9F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+			showEnvVarsInLog = 0;
+		};
+		40F176CB1EAE79BF00D9AC9F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40D46F471E8065200077A7B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40D46F511E8065200077A7B7 /* MainViewController.swift in Sources */,
+				40D8B77920A554A5005F7D76 /* CommandStatus.swift in Sources */,
+				407607861E81A7F000A6A8EA /* DataProvider.swift in Sources */,
+				40D46F4F1E8065200077A7B7 /* AppDelegate.swift in Sources */,
+				40DC7D0F1EA8186200A93AFB /* CustomLogger.swift in Sources */,
+				40C02A9A20A27F28006F07AE /* CommandsViewController.swift in Sources */,
+				40AF22991F29236300E6D1A8 /* SessionDelegator.swift in Sources */,
+				4084B0231EA057EF00ACA046 /* SessionCommands.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40D46F681E8065200077A7B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40AF229A1F29236300E6D1A8 /* SessionDelegator.swift in Sources */,
+				40D8B77A20A554A5005F7D76 /* CommandStatus.swift in Sources */,
+				40D46F741E8065200077A7B7 /* ExtensionDelegate.swift in Sources */,
+				407607871E81A7F000A6A8EA /* DataProvider.swift in Sources */,
+				40DC7D101EA8186200A93AFB /* CustomLogger.swift in Sources */,
+				832A026D290FD3B8004B3EA2 /* WorkoutManager.swift in Sources */,
+				832A02712917C8AF004B3EA2 /* CoreMotionManager.swift in Sources */,
+				83BDC054291AACAD0016A7EE /* DatafileManager.swift in Sources */,
+				83BDC058291FB7A80016A7EE /* ActivitySelectionView.swift in Sources */,
+				83BDC056291F9FEE0016A7EE /* ProgressController.swift in Sources */,
+				832A026F291113A6004B3EA2 /* SummaryController.swift in Sources */,
+				4076077E1E8183AF00A6A8EA /* SessionCommands.swift in Sources */,
+				40D46F721E8065200077A7B7 /* MainInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40D46F601E8065200077A7B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40D46F5C1E8065200077A7B7 /* ActivityRecording WatchKit App */;
+			targetProxy = 40D46F5F1E8065200077A7B7 /* PBXContainerItemProxy */;
+		};
+		40D46F6F1E8065200077A7B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40D46F6B1E8065200077A7B7 /* ActivityRecording WatchKit Extension */;
+			targetProxy = 40D46F6E1E8065200077A7B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40D46F521E8065200077A7B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40D46F531E8065200077A7B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		40D46F571E8065200077A7B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40D46F581E8065200077A7B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		40D46F621E8065200077A7B7 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40D46F631E8065200077A7B7 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40D46F781E8065200077A7B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553200CB0B03C77CB7FCA0AC /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		40D46F791E8065200077A7B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553200CB0B03C77CB7FCA0AC /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40D46F7B1E8065200077A7B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553200CB0B03C77CB7FCA0AC /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "ActivityRecording WatchKit Extension/ActivityRecording WatchKit Extension.entitlements";
+				DEVELOPMENT_TEAM = L38W95582F;
+				INFOPLIST_FILE = "ActivityRecording WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimpleWatchConnectivityL5nl8W.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		40D46F7C1E8065200077A7B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553200CB0B03C77CB7FCA0AC /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "ActivityRecording WatchKit Extension/ActivityRecording WatchKit Extension.entitlements";
+				DEVELOPMENT_TEAM = L38W95582F;
+				INFOPLIST_FILE = "ActivityRecording WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimpleWatchConnectivityL5nl8W.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		40D46F7F1E8065200077A7B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553200CB0B03C77CB7FCA0AC /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ActivityRecording WatchKit App/ActivityRecording WatchKit App.entitlements";
+				DEVELOPMENT_TEAM = L38W95582F;
+				IBSC_MODULE = ActivityRecording_WatchKit_Extension;
+				INFOPLIST_FILE = "ActivityRecording WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimpleWatchConnectivityL5nl8W.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		40D46F801E8065200077A7B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553200CB0B03C77CB7FCA0AC /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ActivityRecording WatchKit App/ActivityRecording WatchKit App.entitlements";
+				DEVELOPMENT_TEAM = L38W95582F;
+				IBSC_MODULE = ActivityRecording_WatchKit_Extension;
+				INFOPLIST_FILE = "ActivityRecording WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimpleWatchConnectivityL5nl8W.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		40D46F831E8065200077A7B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553200CB0B03C77CB7FCA0AC /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ActivityRecording/ActivityRecording.entitlements;
+				DEVELOPMENT_TEAM = L38W95582F;
+				INFOPLIST_FILE = ActivityRecording/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimpleWatchConnectivityL5nl8W;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		40D46F841E8065200077A7B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553200CB0B03C77CB7FCA0AC /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ActivityRecording/ActivityRecording.entitlements;
+				DEVELOPMENT_TEAM = L38W95582F;
+				INFOPLIST_FILE = ActivityRecording/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimpleWatchConnectivityL5nl8W;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40D46F461E8065200077A7B7 /* Build configuration list for PBXProject "ActivityRecording" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40D46F781E8065200077A7B7 /* Debug */,
+				40D46F791E8065200077A7B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40D46F7A1E8065200077A7B7 /* Build configuration list for PBXNativeTarget "ActivityRecording WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40D46F7B1E8065200077A7B7 /* Debug */,
+				40D46F7C1E8065200077A7B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40D46F7E1E8065200077A7B7 /* Build configuration list for PBXNativeTarget "ActivityRecording WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40D46F7F1E8065200077A7B7 /* Debug */,
+				40D46F801E8065200077A7B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40D46F821E8065200077A7B7 /* Build configuration list for PBXNativeTarget "ActivityRecording" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40D46F831E8065200077A7B7 /* Debug */,
+				40D46F841E8065200077A7B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40D46F431E8065200077A7B7 /* Project object */;
+}

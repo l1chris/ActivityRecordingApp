@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="21225" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="21040"/>
+    </dependencies>
+    <scenes>
+        <!--MainInterfaceController-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="MainInterfaceController" id="AgC-eL-Hgc" customClass="MainInterfaceController" customModule="ActivityRecording_WatchKit_Extension">
+                    <items>
+                        <button width="1" height="0.90000000000000002" alignment="left" title="START A RECORDING" id="0hc-zu-OlG" userLabel="Select Activity">
+                            <connections>
+                                <action selector="btnPressed" destination="AgC-eL-Hgc" id="uQ7-si-uis"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-387" y="-35"/>
+        </scene>
+        <!--SelectionHostingController-->
+        <scene sceneID="F9D-5m-BhH">
+            <objects>
+                <hostingController identifier="SelectionHostingController" id="3ma-Y9-a2A" customClass="SelectionHostingController" customModule="ActivityRecording_WatchKit_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="27" y="-35"/>
+        </scene>
+        <!--ProgressController-->
+        <scene sceneID="wYI-tf-E0L">
+            <objects>
+                <controller identifier="ProgressController" id="Zfb-Vh-bO6" customClass="ProgressController" customModule="ActivityRecording_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="28" alignment="left" text="Label" textAlignment="left" numberOfLines="0" id="foZ-nr-7kp"/>
+                        <group width="1" alignment="left" layout="vertical" id="GNg-yF-M7B" userLabel="activeRecordingGroup">
+                            <items>
+                                <separator alignment="left" id="VFY-gg-7cp"/>
+                                <timer alignment="left" id="mwe-kL-wxW">
+                                    <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                </timer>
+                                <label alignment="left" text="-- BPM" id="uvB-Yl-Gcb">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                </label>
+                                <separator alignment="left" id="zuG-E4-PTn"/>
+                                <group width="1" alignment="center" verticalAlignment="bottom" layout="vertical" id="CXt-0u-aUY">
+                                    <items>
+                                        <group width="60" height="35" alignment="center" verticalAlignment="bottom" radius="15" id="8JU-LH-nC5" userLabel="xmarkGroup">
+                                            <items>
+                                                <button width="25" height="25" alignment="center" verticalAlignment="center" backgroundImage="xmark" catalog="system" id="IFz-1J-UJl">
+                                                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <connections>
+                                                        <action selector="handleStopRecording" destination="Zfb-Vh-bO6" id="0Dj-Uf-gef"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                            <color key="backgroundColor" red="0.31400609016418457" green="0.076813302934169769" blue="0.071403063833713531" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </group>
+                                        <label width="28" alignment="center" verticalAlignment="bottom" text="End" id="W6Q-Eb-NMy"/>
+                                    </items>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="activeRecordingGroup" destination="GNg-yF-M7B" id="EVG-ks-wrp"/>
+                        <outlet property="heartRateLabel" destination="uvB-Yl-Gcb" id="baw-wi-XaG"/>
+                        <outlet property="statusLabel" destination="foZ-nr-7kp" id="n2w-m2-uzS"/>
+                        <outlet property="timerLabel" destination="mwe-kL-wxW" id="meu-zn-7PI"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="433" y="-35"/>
+        </scene>
+        <!--SummaryController-->
+        <scene sceneID="Lrj-LP-bFq">
+            <objects>
+                <controller identifier="SummaryController" id="FFw-rU-g8j" userLabel="SummaryController" customClass="SummaryController" customModule="ActivityRecording_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Recording ended" id="SUt-ey-H8v"/>
+                        <separator alignment="left" id="mAN-JQ-eJq"/>
+                        <label width="1" alignment="left" text="TOTAL TIME" id="tHH-i4-ZgA"/>
+                        <label alignment="left" text="00:00:00" id="BiS-mC-jk8">
+                            <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                        </label>
+                        <separator alignment="left" id="2HW-un-xyr"/>
+                        <group alignment="center" verticalAlignment="bottom" alpha="0.90000000000000002" id="jHH-Pm-KTg">
+                            <items>
+                                <group width="60" height="35" alignment="left" radius="15" id="WBU-2g-4Ef">
+                                    <items>
+                                        <button width="25" height="25" alignment="center" verticalAlignment="center" backgroundImage="trash" catalog="system" id="rx7-AP-cdi">
+                                            <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="deleteBtnPressed" destination="FFw-rU-g8j" id="lhF-r0-yxC"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <color key="backgroundColor" red="0.58702257937855196" green="0.30607675136429663" blue="0.31095019326920825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </group>
+                                <group width="60" height="35" alignment="left" radius="15" id="kbQ-i8-57S">
+                                    <items>
+                                        <button width="25" height="25" alignment="center" verticalAlignment="center" backgroundImage="checkmark" catalog="system" id="ER2-hJ-IcX">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="saveBtnPressed" destination="FFw-rU-g8j" id="2CV-S8-eye"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <color key="backgroundColor" red="0.45131616255982154" green="0.70535433442905693" blue="0.42702885931907431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="elapsedTimeLabel" destination="BiS-mC-jk8" id="CC7-uB-2KB"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="863" y="-35"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkmark" catalog="system" width="128" height="110"/>
+        <image name="trash" catalog="system" width="114" height="128"/>
+        <image name="xmark" catalog="system" width="128" height="112"/>
+    </resources>
+</document>
